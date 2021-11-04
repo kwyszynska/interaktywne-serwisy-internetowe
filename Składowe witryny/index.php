@@ -5,6 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+
+    
+
     <title>Składowe witryny</title>
 </head>
 
@@ -38,6 +42,7 @@
         </button>
     </form>
 
+    </br></br>
 
     <form method="POST" action="src/potwierdzeniePOST.php">
         <div>
@@ -66,11 +71,8 @@
         </button>
     </form>
 
-    <?php
-    include 'src/ciasteczko.php';
-    include 'src/sesja.php';
-    ?>
 
+</br></br>
 
     <form method="POST" action="src/ciasteczkoPOST.php">
         <div>
@@ -83,10 +85,12 @@
             <input name="imie">
         </div>
 
-        <button type="submit" name="zatwierdź" value="wartość zatwierdzona">
+        <button type="submit" name="zatwierdz7" value="wartość zatwierdzona">
             Wyślij
         </button>
     </form>
+
+    </br></br>
 
     <form method="POST" action="src/sesjaPOST.php">
         <div>
@@ -96,13 +100,18 @@
             <label for="nazwisko">
                 Nazwisko
             </label>
-            <input name="nazwisko">
-            <button type="submit" name="zatwierdź" value="wartość zatwierdzona">
+            <input name="nazwisko"></br>
+            <button type="submit" name="zatwierdz9" value="wartość zatwierdzona">
                 Wyślij
             </button>
     </form>
 
+    </br></br>
 
+  <?php
+    include 'src/ciasteczko.php';
+    include 'src/sesja.php';
+    ?>
 </body>
 
 </html>
